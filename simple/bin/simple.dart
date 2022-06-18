@@ -55,7 +55,8 @@ class StashSaveCommand extends Command {
   @override
   void run() {
     print(argResults?.arguments);
-    if (argResults?.arguments.indexOf("f") != null &&
-        argResults?.arguments.indexOf("f")! > 0) {}
+    if (argResults?.arguments.indexOf("f") != null) {
+      print("hao");
+    }
   }
 }
