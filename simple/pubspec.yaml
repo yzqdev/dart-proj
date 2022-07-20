@@ -11,7 +11,8 @@ environment:
 
 dev_dependencies:
   lints: ^2.0.0
-  test: ^1.16.0
+  test: ^1.21.4
 dependencies:
-  args: ^2.3.0
+  args: ^2.3.1
   crypto: ^3.0.1
+  md5_file_checksum: ^1.0.3
