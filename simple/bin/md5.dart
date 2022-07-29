@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:crypto/crypto.dart' as crypto;
 
-bool isPhone(String input) {
+bool isWin(String input) {
   RegExp pathReg = RegExp(r"\.\\");
   return pathReg.hasMatch(input);
 }
@@ -11,7 +11,7 @@ void main(List<String> arguments) async {
   DateTime now = DateTime.now();
 
   var filePath = arguments[0];
-  if (isPhone(filePath)) {
+  if (isWin(filePath)) {
     filePath = arguments[0].substring(2);
   }
   print(filePath);
